@@ -35,7 +35,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ArknightsResources.CustomResourceHelpers" Version="0.2.2-alpha" />
     <PackageReference Include="Fmod5Sharp" Version="3.0.1" />
     <PackageReference Include="K4os.Compression.LZ4" Version="1.3.5" />
     <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
@@ -46,10 +45,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
-  <!-- If you just want to modify this library, remove "Condition="$(Configuration) == 'Release'"" of this ItemGroup -->
   <ItemGroup>
-    <PackageReference Include="ArknightsResources.Stories.Models" Version="0.2.1-alpha" />
+    <ProjectReference Include="..\..\CustomResourceHelpers\src\ArknightsResources.CustomResourceHelpers.csproj" />
+    <ProjectReference Include="..\..\OperatorsModels\src\ArknightsResources.Operators.Models.csproj" />
+    <ProjectReference Include="..\..\StoriesModels\src\ArknightsResources.Stories.Models.csproj" />
   </ItemGroup>
 
   <!-- If you just want to modify this library, remove this ItemGroup -->
